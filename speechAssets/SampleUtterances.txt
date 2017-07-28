@@ -1,0 +1,4 @@
+HelloWorldIntent say hello
+HelloWorldIntent hello
+HelloWorldIntent hey
+HelloWorldIntent say something

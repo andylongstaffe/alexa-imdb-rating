@@ -1,0 +1,10 @@
+{
+  "name": "alexa-imdb-rating",
+  "version": "1.0.0",
+  "description": "Simple alexa skill to retrieve imdb rating for a film",
+  "author": "Andy Longstaffe",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0"
+  }
+}
