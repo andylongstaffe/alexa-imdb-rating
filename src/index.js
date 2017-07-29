@@ -1,4 +1,5 @@
 var Alexa = require('alexa-sdk');
+var MovieRating = require('./MovieRatings');
 
 var helloWorldOutput = 'Hello Andy and Sarah';
 
@@ -11,6 +12,17 @@ var handlers = {
 
     'HelloWorldIntent': function() {
         this.emit(':tell', helloWorldOutput);
+    },
+
+    'GetFilmRatingIntent': function() {
+        var searchTerm = 'The Goonies';
+        if(this.event.request.intent.slots.film && this.event.request.intent.slots.film.value) {
+            searchTerm = this.event.request.intent.slots.film.value;
+        }
+        searchTerm = searchTerm.replace(/ /g , "+");
+        MovieRating.getRating(searchTerm, function(err, rating) {
+            this.emit(':tell', 'The rating for ' + searchTerm + ' is ' + rating);
+        });
     },
 
     "AMAZON.HelpIntent": function () {

@@ -4,6 +4,15 @@
       "intent": "HelloWorldIntent"
     },
     {
+      "intent": "GetFilmRatingIntent",
+      "slots": [
+        {
+          "name": "film",
+          "type": "AMAZON.Movie"
+        }
+      ]
+    },
+    {
       "intent": "AMAZON.HelpIntent"
     },
     {

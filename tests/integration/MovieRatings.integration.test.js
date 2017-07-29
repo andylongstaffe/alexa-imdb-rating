@@ -10,6 +10,7 @@ describe('', function() {
     });
 
     it('should do something', function(done) {
-        MovieRatings.getRating('whatever', done);
+        this.timeout(20000);
+        MovieRatings.getRating('goonies', done);
     });
 });

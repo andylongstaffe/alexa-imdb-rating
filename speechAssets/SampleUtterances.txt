@@ -2,3 +2,9 @@ HelloWorldIntent say hello
 HelloWorldIntent hello
 HelloWorldIntent hey
 HelloWorldIntent say something
+
+GetFilmRatingIntent Give me the rating for {film}
+GetFilmRatingIntent What rating does {film} have
+GetFilmRatingIntent What score does {film} have
+GetFilmRatingIntent What is the rating for {film}
+
